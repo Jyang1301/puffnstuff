@@ -1,0 +1,874 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 200vh;
+  font-family: "Economica", sans-serif;
+  background-color: #000000;
+}
+
+/* General Styles */
+/* .container {
+    margin-left: 30px;  
+    margin-right: 30px;
+} */
+
+.row {
+  margin-left: 0; /* Override default negative margin if needed */
+  margin-right: 0; /* Override default negative margin if needed */
+}
+
+.item {
+  padding: 15px; /* Optional: Add internal padding to each item */
+}
+
+/* Theme sections */
+
+:root {
+  --primary-color: #fce02a;
+  --primary-color-trsp: rgba(252, 224, 42, 0.5);
+}
+
+/* Navigation Section */
+
+nav {
+  background-color: #292929 !important;
+  height: 100px;
+}
+
+#Navigation .container-fluid {
+  --bs-gutter-x: 0rem;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #fce02a;
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand img {
+  width: auto;
+  height: auto;
+  max-height: 70px;
+  max-width: 70px;
+  margin-left: 5vw;
+}
+
+.navbar-nav {
+  margin-right: 5vw;
+}
+
+.navbar-collapse {
+  background-color: #292929 !important;
+  --bs-gutter-x: 0rem;
+  padding-left: 5vw;
+}
+
+.navbar-toggler {
+  background-color: #fce02a;
+  margin-right: 20px;
+}
+
+/* Hero Section */
+
+#Hero {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: auto;
+}
+
+.hero-content {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 115px 0 15px 0;
+}
+
+.hero-content p {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-inner {
+  height: 70vh;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 70vh;
+  object-fit: fill; /* Ensures the image covers the entire area */
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-caption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  position: absolute;
+  top: 45%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-caption h2 {
+  font-family: "Bungee", sans-serif;
+  font-size: 6rem;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 9;
+}
+
+.banner-title {
+  position: relative;
+}
+
+.carousel-item p {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hero-span {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  width: 77%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+.title-line-1 {
+  color: #000000;
+}
+
+.title-line-2 {
+  color: #ffffff;
+  text-shadow: #000000 -20px 12px 10px;
+}
+
+.title-btn {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-left: 2rem;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border: none;
+}
+
+/* Highlights section */
+
+#Highlights {
+  background-color: black;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  color: #ffffff;
+}
+
+#Highlights h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+/* Products section */
+
+/* Ensure product items are positioned for animation */
+.product-item {
+  position: relative;
+  opacity: 0; /* Start invisible */
+  transform: translateX(-100%); /* Start off-screen to the left */
+}
+
+.product-item-animation {
+  animation-name: flyIn; /* Use the defined fly-in animation */
+  animation-duration: 0.8s; /* Duration of the animation */
+  animation-fill-mode: forwards; /* Keep the final state after animation ends */
+}
+
+/* Fly-in animation */
+@keyframes flyIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); /* Start off-screen */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Land in static position */
+  }
+}
+
+/* Sequential delays based on data-animation-order */
+.product-item[data-animation-order="1"] {
+  animation-delay: 0s;
+}
+.product-item[data-animation-order="2"] {
+  animation-delay: 0.3s;
+}
+.product-item[data-animation-order="3"] {
+  animation-delay: 0.6s;
+}
+.product-item[data-animation-order="4"] {
+  animation-delay: 0.9s;
+}
+.product-item[data-animation-order="5"] {
+  animation-delay: 1.2s;
+}
+.product-item[data-animation-order="6"] {
+  animation-delay: 1.5s;
+}
+.product-item[data-animation-order="7"] {
+  animation-delay: 1.8s;
+}
+.product-item[data-animation-order="8"] {
+  animation-delay: 2.1s;
+}
+
+.product-item[data-animation-order="9"] {
+  animation-delay: 2.4s;
+}
+
+.product-item[data-animation-order="10"] {
+  animation-delay: 2.7s;
+}
+
+.product-item[data-animation-order="11"] {
+  animation-delay: 3s;
+}
+
+.product-item[data-animation-order="12"] {
+  animation-delay: 3.3s;
+}
+
+.product-item[data-animation-order="13"] {
+  animation-delay: 3.6s;
+}
+
+.product-item[data-animation-order="14"] {
+  animation-delay: 3.9s;
+}
+
+.product-item[data-animation-order="15"] {
+  animation-delay: 4.2s;
+}
+
+.product-item[data-animation-order="16"] {
+  animation-delay: 4.5s;
+}
+
+#Products .container-fluid {
+  /* width: 100%; */
+  margin: 0;
+  padding: 0;
+}
+
+.product-item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.product-item img {
+  /* display: block; */
+  width: 100%;
+  height: 300px;
+}
+
+.product-title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  padding: 0px 35px 15px 0;
+  background-color: #ffffff;
+}
+
+.product-item h2 {
+  text-align: left;
+  font-family: "Bungee", sans-serif;
+  font-size: 2rem;
+  color: #000000;
+  text-align: center;
+  font-weight: 900;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: -2.75% 0 0 0;
+}
+
+.title-fix h2 {
+  margin-top: -5% !important;
+}
+
+.overlay-green,
+.overlay-red,
+.overlay-purple,
+.overlay-cream,
+.overlay-white,
+.overlay-rainbow,
+.overlay-blue,
+.overlay-cream-light {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* Adjust opacity as needed */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.overlay-green {
+  background-color: rgba(0, 192, 58, 0.651); /* Green overlay */
+}
+
+.overlay-red {
+  background-color: #c61c2498; /* Red overlay */
+}
+
+.overlay-purple {
+  background-color: #a020f090; /* Purple overlay */
+}
+.overlay-cream {
+  background-color: #ffecd8c1; /* Cream overlay */
+}
+
+.overlay-white {
+  background-color: #3c3c3cc1; /* White overlay */
+}
+.overlay-blue {
+  background-color: #17049198; /* Blue overlay */
+}
+
+.overlay-cream-light {
+  background-color: #ffecd895; /* Cream overlay */
+}
+
+.overlay-rainbow {
+  background-image: linear-gradient(
+    163deg,
+    rgba(196, 108, 152, 0.651),
+    rgba(148, 187, 233, 0.651)
+  );
+}
+
+.product-item:hover .overlay-green,
+.product-item:hover .overlay-red,
+.product-item:hover .overlay-purple,
+.product-item:hover .overlay-white,
+.product-item:hover .overlay-cream,
+.product-item:hover .overlay-rainbow,
+.product-item:hover .overlay-blue,
+.product-item:hover .overlay-cream-light {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.product-item:hover img {
+  transform: scale(1.1); /* Slightly enlarge the product item on hover */
+  transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+}
+
+.product-title-border {
+  border: 2px solid #000000;
+  border-left: 0;
+}
+
+/* Reviews section */
+
+#Reviews {
+  color: white;
+  padding: 70px 0;
+}
+
+#Reviews h2 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-align: left;
+}
+
+#Reviews h3 {
+  font-size: 2rem;
+}
+
+#Reviews p {
+  font-size: 1.3rem;
+  line-height: 1;
+  width: 90%;
+}
+
+#Reviews .container {
+  position: relative;
+}
+
+.h2-wrapper {
+  position: relative;
+  width: max-content;
+}
+
+.h2-wrapper > span {
+  height: 5rem;
+  width: 135%;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  padding-right: 10rem;
+  z-index: -1;
+}
+
+.h2-wrapper h2 {
+  font-family: "Bungee", sans-serif;
+  color: black;
+  text-transform: uppercase;
+}
+
+.review-container {
+  position: relative;
+  background-color: #292929;
+  /* padding: 30px;
+     */
+  padding: 3.2em 1.5em 0.9em 1.5em;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+#Reviews img {
+  position: absolute;
+  top: -52px;
+  left: 10%;
+  height: 100px;
+  width: 100px;
+}
+
+#Reviews .row {
+  margin-top: 100px;
+}
+
+.review-container p {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.user-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #fce02a;
+  padding-top: 10px;
+}
+
+/* Maps section */
+
+#GoogleMaps {
+  color: white;
+}
+
+#GoogleMaps h2 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+.contact-us {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.contact-us a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-us button {
+  color: black;
+  font-weight: bolder;
+  background-color: #fce02a;
+  border: none;
+  padding: 0 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.contact-us button a {
+  font-size: 3rem;
+  color: black;
+  text-decoration: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.socials img {
+  height: 40px;
+  width: 40px;
+}
+
+.contact-us i {
+  color: #fce02a;
+}
+
+/* Footer section */
+
+#Footer .h2-wrapper {
+  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 50%;
+  position: relative;
+  width: max-content;
+}
+
+#Footer .h2-wrapper > span {
+  height: 3rem;
+  width: 135%;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -11%);
+  padding-right: 10rem;
+  z-index: -1;
+}
+
+#Footer {
+  margin-top: 20px;
+  background-color: #292929;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#Footer p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1399.98px) {
+  .navbar-brand img {
+    max-height: 60px;
+    margin-left: 3vw;
+  }
+  .navbar-nav {
+    margin-right: 3vw;
+  }
+  .carousel-caption h2 {
+    font-size: 5rem;
+  }
+  .product-item h2 {
+    font-size: 1.8rem;
+  }
+  #GoogleMaps iframe {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .nav-link {
+    font-size: 18px;
+  }
+  .carousel-inner {
+    height: 60vh;
+  }
+  .carousel-caption h2 {
+    font-size: 4rem;
+  }
+  .product-item img {
+    height: 250px;
+  }
+  #GoogleMaps iframe {
+    width: 450px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    max-width: 100vw;
+  }
+  .navbar-collapse {
+    padding-left: 3vw;
+  }
+
+  .banner-title a {
+    padding-top: 20px;
+  }
+
+  .title-btn {
+    box-shadow: 2px 5px 10px black;
+    margin-top: 25px;
+  }
+
+  .carousel-inner {
+    height: 50vh;
+  }
+  .carousel-caption h2 {
+    font-size: 3rem;
+  }
+  .carousel-caption p {
+    display: none;
+  }
+
+  /* Highlights */
+
+  #Highlights {
+    padding-bottom: 35px;
+    padding-top: 35px;
+  }
+
+  #Highlights .col-12 .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Products */
+  .product-item img {
+    height: 300px;
+  }
+  .product-item h2 {
+    font-size: 2rem;
+  }
+
+  #Reviews .container {
+    max-width: 992px;
+    width: 100%;
+  }
+
+  #GoogleMaps .container {
+    max-width: 991px;
+    width: 90%;
+  }
+
+  #GoogleMaps iframe {
+    width: 100%;
+  }
+
+  .contact-us {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+  .carousel-inner {
+    height: 40vh;
+  }
+
+  .carousel-caption {
+    top: 30%;
+  }
+
+  .d-none {
+    display: flex !important;
+  }
+
+  .carousel-caption p {
+    display: block;
+    font-size: 1rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .carousel-caption h2 {
+    font-size: 2rem;
+  }
+
+  #Products .col-12 {
+    width: 50%;
+  }
+  /* Products  */
+  .product-item img {
+    height: 250px;
+  }
+  .product-item h2 {
+    font-size: 1.87rem;
+  }
+
+  /* Highlights  */
+
+  #Highlights {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  #Hightlights .container {
+    max-width: 767px;
+    width: 80%;
+  }
+
+  #Hightlights h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Reviews @ max-width: 767px */
+
+  #Reviews .col-lg-4 {
+    padding: 0 10rem 7rem;
+
+    margin: 0 auto;
+  }
+  #Reviews h2 {
+    font-size: 2.5rem;
+  }
+
+  #Reviews img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    transform: translate(-50%, -50%);
+  }
+  #GoogleMaps iframe {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+/* Max-width: 575.98 */
+
+@media (max-width: 575.98px) {
+  .navbar-brand img {
+    max-height: 50px;
+  }
+  .carousel-inner {
+    height: 55vh;
+  }
+  .carousel-caption {
+    display: none;
+    top: 40%;
+  }
+
+  .carousel-caption h2 {
+    font-size: 3rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.5rem;
+  }
+  .product-item img {
+    height: 225px;
+  }
+  .product-item h2 {
+    font-size: 1.5rem;
+  }
+
+  #Reviews .col-lg-4 {
+    padding: 0 4rem 7rem;
+    margin: 0 auto;
+  }
+  #Reviews h2 {
+    font-size: 2rem;
+  }
+
+  #GoogleMaps iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 399.98px) {
+  .carousel-caption h2 {
+    font-size: 2rem;
+  }
+
+  #Highlights .row .g-3 {
+    --bs-gutter-x: 0rem;
+  }
+
+  #Highlights .container .px-4 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  #Highlights .row .item {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  #Products .col-12 {
+    width: 100%;
+  }
+
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  .product-item img {
+    height: 200px;
+  }
+  .product-item h2 {
+    font-size: 1.5rem;
+  }
+
+  #Reviews h2 {
+    font-size: 3rem;
+  }
+
+  .h2-wrapper > span {
+    height: 4rem;
+    width: 125%;
+  }
+
+  #Reviews .col-lg-4 {
+    padding: 0 1rem 5rem;
+  }
+
+  #GoogleMaps h2 {
+    font-size: 3rem;
+  }
+
+  .h2-wrapper > span {
+    height: 3.5rem;
+    width: 108%;
+  }
+
+  #GoogleMaps .h2-wrapper {
+    position: relative;
+    left: -27px;
+    margin-bottom: 3rem;
+  }
+
+  #GoogleMaps iframe {
+    width: 100%;
+    height: 250px;
+  }
+}

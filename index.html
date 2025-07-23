@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Puff n' Stuff</title>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <!-- Navbar section -->
+    <nav id='Navigation' class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="./assets/logo.PNG" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+            <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+            <li class="nav-item">
+          <a class="nav-link" href="#">Find Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">THC-A</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kratom</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</nav>
+    <div class="hero-content">
+        <h1>Puff n' Stuff
+            Smoke Shop
+        </h1>
+        <p>Address: 6624 N 10th St, McAllen, TX 78504</p>
+        <p>Phone: (956) 687-7833</p>
+    </div>
+
+<!-- Main hero section -->
+<section id="Hero">
+
+
+ <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./assets/main-banner.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="banner-title">        
+            <span class="hero-span"></span>
+            <h2><span class="title-line-1">THCA</span><br><span class="title-line-2">Products</span></h2>
+
+        </div>
+            <p>Starting at $6.99</p>
+        <a href="https://www.google.com/maps?client=opera-gx&oe=UTF-8&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=Ke_1GehMoWWGMTWHwehmzvl_&daddr=6624+N+10th+St,+McAllen,+TX+78504" target="_blank"><button class="title-btn">Visit us</button></a>
+      </div>
+    </div>
+    <!-- <div class="carousel-item">
+      <img src="./assets/hero-banner-green.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/hero-banner-red.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div> -->
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+<section id="Highlights">
+    <div class="highlights-container container">
+<div class="container px-4"> <!-- Added px-4 for left and right padding -->
+    <div class="row g-3"> <!-- g-3 adds gutter spacing between columns -->
+        <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+            <div class="item">
+                <i class="fa-duotone fa-solid fa-credit-card fa-3x"></i>
+                <h3>Payment Methods</h3>
+                <p>Cash, card, Tap</p>
+            </div>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+            <div class="item"><i class="fa-solid fa-tags fa-3x"></i><h3>In-Store Specials</h3><p>Ask about our specials</p></div>
+        </div>  
+        <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+            <div class="item"><i class="fa-solid fa-location-dot fa-3x"></i><h3>Locally Owned</h3><p>Family owned & operated</p></div>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+            <div class="item"><i class="fa-solid fa-face-grin-wide fa-3x"></i><h3>Wide Selection</h3><p>We have something for everyone</p></div>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+            <div class="item"><i class="fa-solid fa-sack-xmark fa-3x"></i><h3>Discreet bags</h3><p>Black bags to conceal your purchases</p></div>
+        </div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-2">
+            <div class="item"><i class="fa-regular fa-calendar-check fa-3x"></i><h3>15+ Years</h3><p>We've been serving McAllen for over 15 years!</p></div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Products Section -->
+
+<section id="Products">
+
+<div class="container-fluid">
+    <div class="row g-0">
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="product-item" data-animation-order="1">
+                <img src="./assets/thca.png" alt="THCA Products" class="img-fluid">
+                <div class="overlay-green"></div>
+                <div class="product-title"><h2>THCA PRODUCTS</h2></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="product-item" data-animation-order="2">
+                <img src="./assets/kratom-remarkable-herms-white-green-red-vein-smoke-shop-mcallen.webp" alt="Kratom" class="img-fluid">
+                <div class="overlay-cream-light"></div>
+                <div class="product-title title-fix"><h2>KRATOM</h2></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="product-item" data-animation-order="3">
+                <img src="./assets/VAPES.jpg" alt="Vapes" class="img-fluid">
+                <div class="overlay-purple"></div>
+                <div class="product-title title-fix"><h2>VAPES</h2></div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-12">
+            <div class="product-item" data-animation-order="4">
+                <img src="./assets/whipcream.png" alt="Cream Chargers" class="img-fluid">
+                <div class="overlay-cream"></div>
+                <div class="product-title"><h2>CREAM CHARGERS</h2></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Second row of products -->
+     <div class="container-fluid">
+        <div class="row g-0">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-item" data-animation-order="5">
+                    <img src="./assets/stinger-detox-cleanse-sold-mcallen-drink-smoke-shop.png" alt="Product 1" class="img-fluid">
+                    <div class="overlay-red"></div>
+                    <div class="product-title title-fix"><h2>DETOX</h2></div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-item" data-animation-order="6">
+                    <img src="./assets/koi-cbd-1000mg-cbd-mcallen-smoke-shop.png" alt="Product 1" class="img-fluid">
+                    <div class="overlay-white"></div>
+                    <div class="product-title"><h2>CBD PRODUCTS</h2></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-item" data-animation-order="7">
+                    <img src="./assets/delta-9-rainbow-gummies-sold-in-mcallen-smoke-shop-good-times.png" alt="Product 1" class="img-fluid">
+                    <div class="overlay-rainbow"></div>
+                    <div class="product-title title-fix"><h2>DELTA 9</h2></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-item" data-animation-order="8">
+                    <img src="./assets/wild-berry-incense-magno-passion-shooting-star-cherry-mcallen-smoke-shop.png" alt="Product 1" class="img-fluid">
+                    <div class="overlay-white"></div>
+                    <div class="product-title title-fix"><h2>INCENSE</h2></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 3rd row of products -->
+
+         <div class="container-fluid">
+        <div class="row g-0">
+
+                      <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-item" data-animation-order="9">
+                    <img src="./assets/Hookah-shisha-multiple-mcallen-smoke-shop.png" alt="Product 1" class="img-fluid">
+                    <div class="overlay-white"></div>
+                    <div class="product-title"><h2>HOOKAHS</h2></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-item" data-animation-order="10">
+                    <img src="./assets/al-fakher-shisha-hookah-mcallen-smoke-shop.webp" alt="Product 1" class="img-fluid">
+                    <div class="overlay-cream-light"></div>
+                    <div class="product-title title-fix"><h2>SHISHA</h2></div>
+                    
+                </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-item" data-animation-order="11">
+                    <img src="./assets/dry-herb-vaporizer-honey-comb-smoke-shop-mcallen.png" alt="Product 1" class="img-fluid">
+                    <div class="overlay-white"></div>
+                    <div class="product-title" style="text-align: left;"><h2>DRY HERB <br>VAPORIZERS</h2></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-item" data-animation-order="12">
+                    <img src="./assets/water-bongs-bong-pipe-mcallen-smoke-shop.webp" alt="Product 1" class="img-fluid">
+                    <div class="overlay-white"></div>
+                    <div class="product-title"><h2>WATER PIPES</h2></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4th row of Products -->
+
+             <div class="container-fluid">
+        <div class="row g-0">
+
+                      <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-item" data-animation-order="13">
+                    <img src="./assets/stash-cans-soda-safe-mcallen-smoke-shop.png" alt="Product 1" class="img-fluid">
+                    <div class="overlay-red"></div>
+                    <div class="product-title title-fix"><h2>SAFE CANS</h2></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-item" data-animation-order="14">
+                    <img src="./assets/White-Owl-Group-cigarrilo-slow-burn-smoke-shop-mcallen.png" alt="Product 1" class="img-fluid">
+                    <div class="overlay-blue"></div>
+                    <div class="product-title"><h2>CIGARILLOS</h2></div>
+                    
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-item" data-animation-order="15">
+                    <img src="./assets/pipes-glass-pieces-assorted-all-sizes-smoke-shop-mcallen-tx.jpg" alt="Product 1" class="img-fluid">
+                    <div class="overlay-rainbow"></div>
+                    <div class="product-title" style="text-align: left;"><h2>GLASS PIECES</h2></div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="product-item" data-animation-order="16">
+                    <img src="./assets/accessories-water-pipes-bongs-bowl-glass-smoke-shop-mcallen.jpg" alt="Product 1" class="img-fluid">
+                    <div class="overlay-white"></div>
+                    <div class="product-title product-title-border"><h2>ACCESSORIES <br> & MORE</h2></div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</section>
+
+    <!-- Review Sections -->
+<section id="Reviews">
+    <div class="container">
+        <div class="h2-wrapper">
+            <span></span>
+            <h2 class="mb-4">Reviews</h2>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-4 col-sm-12 col-md-4">
+                <div class="review-container">
+                    <img class="user-pfp img-fluid" src="assets/logo.PNG" alt="">
+                    <p>Very attentive gentleman at the counter. They're always stocked with a variety of items and consumables, good and friendly vibes, and my favorite place to pickup my djarums. Will be coming here again</p>
+                    <div class="user-rating">
+                        <h3>Marcelo C.</h3>
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 col-md-4">
+                <div class="review-container">
+                    <img class="user-pfp" src="assets/logo.PNG" alt="">
+                    <p>My new favorite smoke shop in the valley. All the other smoke shops usually have weird people working, but the owner here is a sweet lady with the cutest puppy ever!! Always has the stuff I need, and new products as well. make sure to go and visit!! :))</p>
+                    <div class="user-rating">
+                        <h3>Victoria E.</h3>
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 col-md-4">
+                <div class="review-container">
+                    <img class="user-pfp" src="assets/logo.PNG" alt="">
+                    <p>Super Easy and Fast! I walked in right after my shift, and needed a battery. I tend to try and study and see if what I’m buying will last in the long run or I should order it. But I was helped very fast, and he gave his honest opinion on one I was looking at. Love it here</p>
+                    <div class="user-rating">
+                        <h3>Gabriel M.</h3>
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Google maps section -->
+<section id="GoogleMaps">
+    <div class="container">
+
+        <div class="h2-wrapper">
+            <span></span>
+            <h2 class="text-center mb-4">Contact Us</h2>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d915369.0856527317!2d-98.281968!3d26.337491!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x8665a14ce819f5ef%3A0x7ff9ce66e8c18735!2sPuff%20and%20Stuff%20Smoke%20Shop%2C%206624%20N%2010th%20St%2C%20McAllen%2C%20TX%2078504!3m2!1d26.2622713!2d-98.2191357!5e0!3m2!1sen!2sus!4v1752013644895!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="contact-us "> 
+                    <h2>Puff n' Stuff Smoke Shop</h2><br>
+                    <a href="https://www.google.com/maps?client=opera-gx&oe=UTF-8&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=Ke_1GehMoWWGMTWHwehmzvl_&daddr=6624+N+10th+St,+McAllen,+TX+78504"><i class="fa-solid fa-location-dot"></i> 6624 N 10th St, McAllen, TX 78504</a><br>
+                    <a href="tel:+19566877833">☎️ Phone: (956) 687-7833</a><br>
+                    <br>
+                    <p>🚫 MUST BE 21 or OVER to enter! 🚫</p>
+                    
+                    <button><a href="tel:+19566877833">Call Us</a></button>
+                    <div class="socials py-4">
+                        <a href="https://www.instagram.com/puffnstuff4200" target="_blank"><img src="./assets/instagram.jpg" alt=""></a>
+                        <a href="https://www.facebook.com/puffnstuff956/" target="_blank"><img src="./assets/facebook.jpg" alt=""></a>
+                        <a href="https://twitter.com/puffnstuff4200" target="_blank"><img src="./assets/twitter.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Footer">
+    <div class="hours mb-4">
+        <div class="h2-wrapper">
+            <span></span>
+            <h2 class="text-center mb-4">Store Hours</h2>
+        </div>
+        <p><span style="color:var(--primary-color);">Monday - Saturday:</span> 11:00am - 3:00 PM <span style="color:var(--primary-color);">&</span> 4:30pm - 11:00 PM</p>
+        <p><span style="color:var(--primary-color);">Sunday:</span> <span style="color:red;">CLOSED</span></p>
+    </div>
+
+    <p>&copy; 2025 Puff n' Stuff Smoke Shop. All rights reserved.</p>
+</section>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
