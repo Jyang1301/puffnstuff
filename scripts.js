@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         },
         {
-            threshold: 0.2, // Trigger when 20% of #Products is visible
+            threshold: 0.025, // Trigger when 20% of #Products is visible
             rootMargin: '0px' // Adjust if needed
         }
     );
