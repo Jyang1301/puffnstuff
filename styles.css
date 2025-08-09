@@ -254,6 +254,17 @@ nav {
 .hero-content p {
   margin: 0;
   padding: 0;
+
+}
+
+.hero-content a {
+
+  text-decoration: none;
+}
+
+.hero-content a p {
+  color: var(--primary-color) !important;
+
 }
 
 .carousel-inner {
@@ -293,6 +304,11 @@ nav {
 
 .banner-title {
   position: relative;
+}
+
+.banner-title a {
+  text-decoration: none !important;
+  color: #000;
 }
 
 .carousel-item p {
