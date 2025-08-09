@@ -311,6 +311,10 @@ nav {
   color: #000;
 }
 
+.banner-title button {
+  color: #000;
+}
+
 .carousel-item p {
   font-size: 2rem;
   font-weight: 400;
